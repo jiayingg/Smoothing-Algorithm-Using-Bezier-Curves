@@ -11,7 +11,7 @@ The article can be found here: [Mystery solved! The secret of Excel curved line 
 
 The main purpose of this R function is to reproduce the (third-order/cubic) **Bezier Spline** that Microsoft Excel used in its **smoothed line** function.
 
-<img src="img\excel%20smooth.png" style="display: block; margin: auto;" />
+<img src="img/excel%20smooth.png" style="display: block; margin: auto;" />
 
 #### Bézier Curves
 
@@ -63,16 +63,15 @@ Smoothing function computes the xy coordinates of **all** point on the bezier cu
 
 Below is an example using a very simple time series data set, the **Value** is generated randomly.
 
-|       |     |     |     |     |     |     |     |     |     |     |
 |:------|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|
 | Time  |    1|    2|    3|    4|    5|    6|    7|    8|    9|   10|
 | Value |   31|   26|   55|    6|   47|   48|   81|   37|   55|   17|
 
-<img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+<img src="img/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
 Now try to tune parameter **g** and see how it affects the smoothness. *n* = 1/*g* number of points will be insert between 2 neighbouring data points.
 
-<img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-2.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-3.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-4.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-5.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-2-6.png" style="display: block; margin: auto;" />
+<img src="img/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-2-2.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-2-3.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-2-4.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-2-5.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-2-6.png" style="display: block; margin: auto;" />
 
 For *g* = 0.05 and smaller, it is smooth enough.
 
@@ -98,7 +97,7 @@ Fits a cubic smoothing spline to the supplied data.
 
 *smoothing* is a smoothing parameter which control the amount of smoothing, typically in \[0, 1.3\] with default as 1. Only works if shape is set to *spline*.
 
-<img src="img\plotly%20smooth.png" style="display: block; margin: auto;" />
+<img src="img/plotly%20smooth.png" style="display: block; margin: auto;" />
 
 #### Comparison
 
@@ -110,4 +109,4 @@ I choose a smooth enough curve from each of the functions above and compare with
 
 **plotly** produce a spline very close to the **Excel smooth**. I did some research, plotly didn't disclose what kind of spline it used.
 
-<img src="img\compare.png" style="display: block; margin: auto;" />
+<img src="img/compare.png" style="display: block; margin: auto;" />
