@@ -63,6 +63,7 @@ Smoothing function computes the xy coordinates of **all** point on the bezier cu
 
 Below is an example using a very simple time series data set, the **Value** is generated randomly.
 
+|       |     |     |     |     |     |     |     |     |     |     |
 |:------|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|
 | Time  |    1|    2|    3|    4|    5|    6|    7|    8|    9|   10|
 | Value |   31|   26|   55|    6|   47|   48|   81|   37|   55|   17|
@@ -83,7 +84,7 @@ Interpolating Splines: Perform cubic (or Hermite) spline interpolation of given 
 
 Interpolation takes place at **n** equally spaced points spanning the interval \[xmin, xmax\].
 
-<img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-2.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-3.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-4.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-5.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-6.png" style="display: block; margin: auto;" />
+<img src="img/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-3-2.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-3-3.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-3-4.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-3-5.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-3-6.png" style="display: block; margin: auto;" />
 
 **smooth.spline {stats}**
 
@@ -91,7 +92,7 @@ Fits a cubic smoothing spline to the supplied data.
 
 *spar* is a smoothing parameter, typically (but not necessarily) in (0, 1\]. The coefficient *λ* of the integral of the squared second derivative in the fit (penalized log likelihood) criterion is a monotone function of spar.
 
-<img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-2.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-3.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-4.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-5.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-6.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-7.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-8.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-9.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-10.png" style="display: block; margin: auto;" /><img src="Smoothing_Algorithm_Using_Bézier_Curves_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-11.png" style="display: block; margin: auto;" />
+<img src="img/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-2.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-3.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-4.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-5.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-6.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-7.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-8.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-9.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-10.png" style="display: block; margin: auto;" /><img src="img/unnamed-chunk-4-11.png" style="display: block; margin: auto;" />
 
 **plotly**
 
