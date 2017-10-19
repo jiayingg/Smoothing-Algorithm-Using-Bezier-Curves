@@ -11,8 +11,6 @@ The article can be found here: [Mystery solved! The secret of Excel curved line 
 
 The main purpose of this R function is to reproduce the (third-order/cubic) **Bezier Spline** that Microsoft Excel used in its **smoothed line** function.
 
-![Excel Smooth](\img\excel%20smooth.png)
-
 <img src="img\excel%20smooth.png" style="display: block; margin: auto;" />
 
 #### Bézier Curves
@@ -100,7 +98,7 @@ Fits a cubic smoothing spline to the supplied data.
 
 *smoothing* is a smoothing parameter which control the amount of smoothing, typically in \[0, 1.3\] with default as 1. Only works if shape is set to *spline*.
 
-![Plotly Smooth](plotly%20smooth.png)
+<img src="img\plotly%20smooth.png" style="display: block; margin: auto;" />
 
 #### Comparison
 
@@ -112,4 +110,4 @@ I choose a smooth enough curve from each of the functions above and compare with
 
 **plotly** produce a spline very close to the **Excel smooth**. I did some research, plotly didn't disclose what kind of spline it used.
 
-![Compare](compare.png)
+<img src="img\compare.png" style="display: block; margin: auto;" />
