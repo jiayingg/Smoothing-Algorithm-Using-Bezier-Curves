@@ -13,6 +13,8 @@ The main purpose of this R function is to reproduce the (third-order/cubic) **Be
 
 ![Excel Smooth](\img\excel%20smooth.png)
 
+<img src="img\excel%20smooth.png" style="display: block; margin: auto;" />
+
 #### Bézier Curves
 
 A Bézier curve is a parametric curve frequently used in computer graphics, animation, modeling, CAD, CAGD and many other related fields. Bezier curves and surfaces are curves written in Bernstein basis form; so, they are known many years ago. However, these applications are used heavily only in the last 30 years.
