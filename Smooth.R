@@ -1,6 +1,4 @@
-Smoothing = function(xyarr, g = 0.1)
-{
-  Bezier4 = function(xyarr, i, t)
+Bezier4 = function(xyarr, i, t)
   {
     # xyarr: matrix format of a 2-dimension data set
     # i    : the indexes of 4 chart points in x/y
@@ -65,7 +63,9 @@ Smoothing = function(xyarr, g = 0.1)
     
     return(matrix(c(px, py), ncol = 2, byrow = TRUE))
   }
-  
+
+Smoothing = function(xyarr, g = 0.1)
+{
   curve = matrix(xyarr[1,], ncol = 2)
   index = c(1,1:nrow(xyarr), nrow(xyarr)) # add index for endpoint intervals
   granular = g
