@@ -11,7 +11,7 @@ The article can be found here: [Mystery solved! The secret of Excel curved line 
 
 The main purpose of this R function is to reproduce the (third-order/cubic) **Bezier Spline** that Microsoft Excel used in its **smoothed line** function.
 
-![Excel Smooth](img\excel%20smooth.png)
+![Excel Smooth](\img\excel%20smooth.png)
 
 #### Bézier Curves
 
