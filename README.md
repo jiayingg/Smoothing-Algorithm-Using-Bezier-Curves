@@ -13,13 +13,13 @@ The main purpose of this R function is to reproduce the (third-order/cubic) **Be
 
 <img src="img/excel%20smooth.png" style="display: block; margin: auto;" />
 
-#### Bézier Curves
+### Bézier Curves
 
 A Bézier curve is a parametric curve frequently used in computer graphics, animation, modeling, CAD, CAGD and many other related fields. Bezier curves and surfaces are curves written in Bernstein basis form; so, they are known many years ago. However, these applications are used heavily only in the last 30 years.
 
 A Bézier curve is defined by a set of control points *P*<sub>0</sub> through *P*<sub>*n*</sub>, where n is called its order (n = 1 for linear, 2 for quadratic, etc.). The first and last control points are always the end points of the curve; however, the intermediate control points (if any) generally do not lie on the curve. The sums in the following sections are to be understood as affine combinations, the coefficients sum to 1.
 
-#### A Specific Case - Cubic Bézier Curves
+### A Specific Case - Cubic Bézier Curves
 
 Four points *P*<sub>0</sub>, *P*<sub>1</sub>, *P*<sub>2</sub> and *P*<sub>3</sub> in the plane or in higher-dimensional space define a cubic Bézier curve. The curve starts at *P*<sub>0</sub> going toward *P*<sub>1</sub> and arrives at *P*<sub>3</sub> coming from the direction of *P*<sub>2</sub>. Usually, it will not pass through *P*<sub>1</sub> or *P*<sub>2</sub>; these points are only there to provide directional information. The distance between *P*<sub>1</sub> and *P*<sub>2</sub> determines "how far" and "how fast" the curve moves towards *P*<sub>1</sub> before turning towards *P*<sub>2</sub>.
 
@@ -37,7 +37,7 @@ For some choices of *P*<sub>1</sub> and *P*<sub>2</sub> the curve may intersect 
 
 Any series of any 4 distinct points can be converted to a cubic Bézier curve that goes through all 4 points in order. Given the starting and ending point of some cubic Bézier curve, and the points along the curve corresponding to t = 1/3 and t = 2/3, the control points for the original Bézier curve can be recovered.
 
-#### Explanation of my Smoothing function
+### Explanation of my Smoothing function
 
 An easy-to-understand explanation of my Smoothing function is that the function adds adequate enough points between two neighbouring data points using the Bézier equations so that the line looks smooth.
 
@@ -59,7 +59,7 @@ Smoothing function computes the xy coordinates of **all** point on the bezier cu
     # g    : granularity of the curve, default set as 0.1, 
     #        which means insert 1/0.1 points between two neighbouring data points
 
-#### Example
+### Example
 
 Below is an example using a very simple time series data set, the **Value** is generated randomly.
 
@@ -76,7 +76,7 @@ Now try to tune parameter **g** and see how it affects the smoothness. *n* =�
 
 For *g* = 0.05 and smaller, it is smooth enough.
 
-#### Other Spline Functions
+### Other Spline Functions
 
 **splinefun {stats}**
 
@@ -100,7 +100,7 @@ Fits a cubic smoothing spline to the supplied data.
 
 <img src="img/plotly%20smooth.png" style="display: block; margin: auto;" />
 
-#### Comparison
+### Comparison
 
 I choose a smooth enough curve from each of the functions above and compare with the Excel smooth function I wrote.
 
